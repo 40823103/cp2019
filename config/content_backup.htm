@@ -109,50 +109,32 @@ fun1(){
 <h1>W10分組任務-攝氏轉華氏</h1>
 <h3>攝氏轉華氏</h3>
 <p>gist:<a href="https://gist.github.com/40823103/384e06ba44bddcb05503bb00fc6c9cef">https://gist.github.com/40823103/384e06ba44bddcb05503bb00fc6c9cef</a></p>
-<p>dartpad:<a href="https://mde.tw/dartpad/?id=384e06ba44bddcb05503bb00fc6c9cef">https://mde.tw/dartpad/?id=384e06ba44bddcb05503bb00fc6c9cef</a></p>
+<p>dartpad:<a href="https://dartpad.dartlang.org/embed-dart.html?id=384e06ba44bddcb05503bb00fc6c9cef&amp;theme=dark">https://dartpad.dartlang.org/embed-dart.html?id=384e06ba44bddcb05503bb00fc6c9cef&amp;theme=dark&amp;theme=dark</a></p>
 <p></p>
 <p></p>
 <p><iframe height="600" src="https://mde.tw/dartpad/?id=384e06ba44bddcb05503bb00fc6c9cef&amp;theme=dark" width="800"></iframe></p>
 <h4><span>華氏轉攝氏</span></h4>
 <p>gist:<a href="https://gist.github.com/40823103/a6425a306d72b1b5d73c7c0aab2efb9f">https://gist.github.com/40823103/a6425a306d72b1b5d73c7c0aab2efb9f</a></p>
-<p>dartpad:<a href="https://mde.tw/dartpad/?id=a6425a306d72b1b5d73c7c0aab2efb9f">https://mde.tw/dartpad/?id=a6425a306d72b1b5d73c7c0aab2efb9f</a></p>
+<p>dartpad:<a href="https://dartpad.dartlang.org/embed-dart.html?id=a6425a306d72b1b5d73c7c0aab2efb9f&amp;theme=dark">https://dartpad.dartlang.org/embed-dart.html?id=a6425a306d72b1b5d73c7c0aab2efb9f&amp;theme=dark&amp;theme=dark</a></p>
 <p></p>
-<p><iframe height="600" src="https://mde.tw/dartpad/?id=a6425a306d72b1b5d73c7c0aab2efb9f&amp;theme=dark" width="800"></iframe></p>
-<h1>W11分組任務</h1>
-<p><br/>About &lt;&lt; <a href="/get_page/W10%E5%88%86%E7%B5%84%E4%BB%BB%E5%8B%991/About.html">Previous</a> <a href="/get_page/W10%E5%88%86%E7%B5%84%E4%BB%BB%E5%8B%991/W11分組任務.html">Next</a> &gt;&gt; W11分組任務 <!-- footer --></p>
-<div class="container">
-<div class="row pt-3 mx-auto">
-<p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --> Copyright ©
+<p><iframe height="600" src="https://mde.tw/dartpad/?id=a6425a306d72b1b5d73c7c0aab2efb9f&amp;theme=dark" width="800"></iframe></p><h1>W11分組任務</h1>
 <script>
-document.write(new Date().getFullYear());
+function getDart(dirname){
+    source = "https://dartpad.github.io/embed-dart.html?gh_owner=40823103&gh_repo=cp2019&gh_path=downloads/dart_ex/" + dirname + "&theme=dark";
+    document.getElementById("iframe").src = source ;
+}
+function largest(){
+document.getElementById("iframe").width = document.body.clientWidth ;
+document.getElementById("iframe").height = document.body.clientWidth*0.5 ;
+}
+function original(){
+document.getElementById("iframe").width = 1200 ;
+document.getElementById("iframe").height = 800 ;
+}
 </script>
-All rights reserved | This template is made with <i aria-hidden="true" class="icon-heart"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a> <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
-</div>
-</div>
-<p><!-- for footer --> <!-- for site wrap --> <!-- <script src="../cmsimde/static/chimper/js/jquery-3.3.1.min.js"></script> -->
-<script src="/get_page/cmsimde/static/chimper/js/jquery-migrate-3.0.1.min.js"></script>
-<script src="/get_page/cmsimde/static/chimper/js/jquery-ui.js"></script>
-<script src="/get_page/cmsimde/static/chimper/js/popper.min.js"></script>
-<script src="/get_page/cmsimde/static/chimper/js/bootstrap.min.js"></script>
-<script src="/get_page/cmsimde/static/chimper/js/owl.carousel.min.js"></script>
-<script src="/get_page/cmsimde/static/chimper/js/jquery.stellar.min.js"></script>
-<script src="/get_page/cmsimde/static/chimper/js/jquery.countdown.min.js"></script>
-<script src="/get_page/cmsimde/static/chimper/js/jquery.magnific-popup.min.js"></script>
-<script src="/get_page/cmsimde/static/chimper/js/bootstrap-datepicker.min.js"></script>
-<script src="/get_page/cmsimde/static/chimper/js/aos.js"></script>
-<!--
-            <script src="../cmsimde/static/chimper/js/typed.js"></script>
-                    <script>
-                    var typed = new Typed('.typed-words', {
-                    strings: ["Web Apps"," WordPress"," Mobile Apps"],
-                    typeSpeed: 80,
-                    backSpeed: 80,
-                    backDelay: 4000,
-                    startDelay: 1000,
-                    loop: true,
-                    showCursor: true
-                    });
-                    </script>
-            -->
-<script src="/get_page/cmsimde/static/chimper/js/main.js"></script>
-</p>
+<!-- 取 Dart 程式的按鈕 -->
+<p><button onclick="getDart('華攝氏徵測轉換')">華攝氏徵測轉換</button></p>
+<!-- 內建放入的 Dart 原始碼 -->
+<p><button onclick="largest()">放大</button> <button onclick="original()">回復</button></p>
+<p><iframe height="800" id="iframe" src="https://dartpad.dartlang.org/embed-dart.html?gh_owner=40823103&amp;gh_repo=cp2019&amp;gh_path=downloads/dart_ex/華攝氏徵測轉換&amp;theme=dark" width="1200"></iframe></p>
+<p></p>
