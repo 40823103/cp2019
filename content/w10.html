@@ -154,13 +154,39 @@ img.add_border {
           </div>
           
         </header>
-    <div id="tipue_search_content">迴圈 << <a href='迴圈.html'>Previous</a> <a href='w10.html'>Next</a> >> w10<br /><h1>阻尼</h1>
-<p>gist:<a href="https://gist.github.com/40823103/8e38cc9e343217985562ed5a22f03d57">https://gist.github.com/40823103/8e38cc9e343217985562ed5a22f03d57</a></p>
-<p>dartpad:<a href="https://mde.tw/dartpad/?id=8e38cc9e343217985562ed5a22f03d57">https://mde.tw/dartpad/?id=8e38cc9e343217985562ed5a22f03d57</a></p>
-<p><iframe height="600" src="https://dartpad.dev/embed-inline.html?id=8e38cc9e343217985562ed5a22f03d57" width=" 500="></iframe></p>
-<p><img alt="" height="268" src="./../images/11.png" width="478"/></p>
-<p><img alt="" height="279" src="./../images/12.png" width="497"/></p>
-<br />迴圈 << <a href='迴圈.html'>Previous</a> <a href='w10.html'>Next</a> >> w10</div>
+    <div id="tipue_search_content">阻尼 << <a href='阻尼.html'>Previous</a> <a href='攝氏華氏.html'>Next</a> >> 攝氏華氏<br /><h1>w10</h1>
+<script>
+function getDart(dirname){
+    source = "https://dartpad.github.io/embed-dart.html?gh_owner=40823103&gh_repo=cp2019&gh_path=downloads/dart_ex/" + dirname + "&theme=dark";
+    document.getElementById("iframe").src = source ;
+}
+function getHtmlDart(dirname){
+    source = "https://dartpad.github.io/embed-html.html?gh_owner=40823103&gh_repo=cp2019&gh_path=downloads/dart_ex/" + dirname + "&theme=dark";
+    document.getElementById("iframe").src = source ;
+}
+function getFlutter(dirname){
+    source = "https://dartpad.github.io/embed-flutter.html?gh_owner=40823103&gh_repo=cp2019&gh_path=downloads/dart_ex/" + dirname + "&theme=dark";
+    document.getElementById("iframe").src = source ;
+}
+function largest(){
+document.getElementById("iframe").width = document.body.clientWidth ;
+document.getElementById("iframe").height = document.body.clientWidth*0.5 ;
+}
+function original(){
+document.getElementById("iframe").width = 800 ;
+document.getElementById("iframe").height = 600 ;
+}
+</script>
+<h4>Dart 程式</h4>
+<p><button onclick="getDart('main')">main</button> <button onclick="getDart('hello')">Hello</button> <button onclick="getDart('loop')">loop</button> <button onclick="getDart('dxdt')">dxdt</button> <button onclick="getDart('quizlet1')">quizlet1</button> <button onclick="getDart('quizlet2')">quizlet2</button> <button onclick="getDart('quizlet3')">quizlet3</button> <button onclick="getDart('cf')">temperature</button> <button onclick="getDart('list string')">temperature string</button></p>
+<h4>Html 程式</h4>
+<p><button onclick="getHtmlDart('roc_flag')">ROC Flag</button> <button onclick="getHtmlDart('grid')">Grid</button> <button onclick="getHtmlDart('xyplot')">X-Y Plot</button> <button onclick="getHtmlDart('slithery')">Slithery</button> <button onclick="getHtmlDart('c,f')">temperature</button> <button onclick="getHtmlDart('list')">temperature string</button> <button onclick="getHtmlDart('USA')">USA Flag</button> <button onclick="getHtmlDart('rot USA')">rot USA Flag</button></p>
+<h4>Flutter 程式</h4>
+<p><button onclick="getFlutter('flutter1')">Flutter1</button> <button onclick="getFlutter('flutter2')">Flutter2</button> <button onclick="getFlutter('flutter3')">Flutter3</button></p>
+<!-- 內建放入的 Dart 原始碼 -->
+<p><button onclick="largest()">放大</button> <button onclick="original()">回復</button></p>
+<p><iframe height="600" id="iframe" src="https://dartpad.dartlang.org/embed-dart.html?gh_owner=40823103&amp;gh_repo=cp2019&amp;gh_path=downloads/dart_ex/dxdt&amp;theme=dark" width="800"></iframe></p>
+<p></p><br />阻尼 << <a href='阻尼.html'>Previous</a> <a href='攝氏華氏.html'>Next</a> >> 攝氏華氏</div>
         
     <!-- footer -->
       <div class="container">

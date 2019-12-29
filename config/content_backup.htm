@@ -104,16 +104,46 @@ fun1(){
 <p><iframe height="600" src="https://dartpad.dev/embed-inline.html?id=8e38cc9e343217985562ed5a22f03d57" width=" 500="></iframe></p>
 <p><img alt="" height="268" src="/images/11.png" width="478"/></p>
 <p><img alt="" height="279" src="/images/12.png" width="497"/></p>
-<h1>攝氏華氏</h1>
-<p>輸入所要轉換的溫度 <input id="F" max="125" min="-40" type="string" value="25F"/> <input id="submit" type="button" value="轉換"/> 轉換結果: <label id="output"></label></p>
-<p>
-<script src="/get_page/downloads/dart-ex/list/list.js"></script>
-<!-- footer --></p>
-<div class="container">
-<div class="row pt-3 mx-auto">
+<h1>w10</h1>
+<script>
+function getDart(dirname){
+    source = "https://dartpad.github.io/embed-dart.html?gh_owner=40823103&gh_repo=cp2019&gh_path=downloads/dart_ex/" + dirname + "&theme=dark";
+    document.getElementById("iframe").src = source ;
+}
+function getHtmlDart(dirname){
+    source = "https://dartpad.github.io/embed-html.html?gh_owner=40823103&gh_repo=cp2019&gh_path=downloads/dart_ex/" + dirname + "&theme=dark";
+    document.getElementById("iframe").src = source ;
+}
+function getFlutter(dirname){
+    source = "https://dartpad.github.io/embed-flutter.html?gh_owner=40823103&gh_repo=cp2019&gh_path=downloads/dart_ex/" + dirname + "&theme=dark";
+    document.getElementById("iframe").src = source ;
+}
+function largest(){
+document.getElementById("iframe").width = document.body.clientWidth ;
+document.getElementById("iframe").height = document.body.clientWidth*0.5 ;
+}
+function original(){
+document.getElementById("iframe").width = 800 ;
+document.getElementById("iframe").height = 600 ;
+}
+</script>
+<h4>Dart 程式</h4>
+<p><button onclick="getDart('main')">main</button> <button onclick="getDart('hello')">Hello</button> <button onclick="getDart('loop')">loop</button> <button onclick="getDart('dxdt')">dxdt</button> <button onclick="getDart('quizlet1')">quizlet1</button> <button onclick="getDart('quizlet2')">quizlet2</button> <button onclick="getDart('quizlet3')">quizlet3</button> <button onclick="getDart('cf')">temperature</button> <button onclick="getDart('list string')">temperature string</button></p>
+<h4>Html 程式</h4>
+<p><button onclick="getHtmlDart('roc_flag')">ROC Flag</button> <button onclick="getHtmlDart('grid')">Grid</button> <button onclick="getHtmlDart('xyplot')">X-Y Plot</button> <button onclick="getHtmlDart('slithery')">Slithery</button> <button onclick="getHtmlDart('c,f')">temperature</button> <button onclick="getHtmlDart('list')">temperature string</button> <button onclick="getHtmlDart('USA')">USA Flag</button> <button onclick="getHtmlDart('rot USA')">rot USA Flag</button></p>
+<h4>Flutter 程式</h4>
+<p><button onclick="getFlutter('flutter1')">Flutter1</button> <button onclick="getFlutter('flutter2')">Flutter2</button> <button onclick="getFlutter('flutter3')">Flutter3</button></p>
+<!-- 內建放入的 Dart 原始碼 -->
+<p><button onclick="largest()">放大</button> <button onclick="original()">回復</button></p>
+<p><iframe height="600" id="iframe" src="https://dartpad.dartlang.org/embed-dart.html?gh_owner=40823103&amp;gh_repo=cp2019&amp;gh_path=downloads/dart_ex/dxdt&amp;theme=dark" width="800"></iframe></p>
+<p></p><h1>攝氏華氏</h1>
+<p>華氏轉攝氏</p>
+<p><iframe height="600" src="https://dartpad.dev/embed-inline.html?id=a6425a306d72b1b5d73c7c0aab2efb9f" width=" 500="></iframe></p>
+<p>攝氏轉華氏</p>
 <p></p>
-</div>
-</div><h1>W16 查驗考試</h1>
+<p></p>
+<p><iframe height="600" src="https://dartpad.dev/embed-inline.html?id=384e06ba44bddcb05503bb00fc6c9cef" width=" 500="></iframe></p>
+<h1>W16 查驗考試</h1>
 <script>
 function getDart(dirname){
     source = "https://dartpad.github.io/embed-dart.html?gh_owner=40823103&gh_repo=cp2019&gh_path=downloads/dart_ex/" + dirname + "&theme=dark";
@@ -134,7 +164,7 @@ document.getElementById("iframe").height = 500 ;
 </script>
 <h4></h4>
 <p><button onclick="getDart('cf')">temperature   </button> <button onclick="getDart('list string')">temperature string  </button></p>
-<p><button onclick="getHtmlDart('USA')">USA Flag</button>   <button onclick="largest()">放大</button> <button onclick="original()">回復</button></p>
+<p><button onclick="getHtmlDart('roc_flag')">ROC Flag  </button><button onclick="getHtmlDart('USA')">USA Flag</button>   <button onclick="largest()">放大</button> <button onclick="original()">回復</button></p>
 <p><iframe height="600" id="iframe" src="https://dartpad.dartlang.org/embed-dart.html?gh_owner=40823103&amp;gh_repo=cp2019&amp;gh_path=downloads/dart_ex/cf&amp;theme=dark" width="800"></iframe></p>
 <p></p>
 <p><!-- for site wrap --></p>
