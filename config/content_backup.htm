@@ -144,40 +144,55 @@ var typed = new Typed('.typed-words', {
 <p>攝氏轉華氏：</p>
 <p><iframe height="1000" src="https://dartpad.dartlang.org/embed-dart.html?id=384e06ba44bddcb05503bb00fc6c9cef&amp;theme=dark" width="1200"></iframe></p>
 <p>華氏轉攝氏：<iframe height="1000" src="https://dartpad.dartlang.org/embed-dart.html?id=a6425a306d72b1b5d73c7c0aab2efb9f&amp;theme=dark" width="1200"></iframe></p><h1>W16 查驗考試</h1>
-<p>
 <script>
 function getDart(dirname){
-    source = "https://dartpad.github.io/embed-dart.html?gh_owner=40823103&gh_repo=cp2019&gh_path=downloads/dart-ex/" + dirname + "&theme=dark";
+    source = "https://dartpad.github.io/embed-dart.html?gh_owner=40823103&gh_repo=cp2019&gh_path=downloads/dart_ex/" + dirname + "&theme=dark";
     document.getElementById("iframe").src = source ;
 }
-
 function getHtmlDart(dirname){
-    source = "https://dartpad.github.io/embed-html.html?gh_owner=40823103&gh_repo=cp2019&gh_path=downloads/dart-ex/" + dirname + "&theme=dark";
+    source = "https://dartpad.github.io/embed-html.html?gh_owner=40823103&gh_repo=cp2019&gh_path=downloads/dart_ex/" + dirname + "&theme=dark";
     document.getElementById("iframe").src = source ;
 }
-
-function getFlutter(dirname){
-    source = "https://dartpad.github.io/embed-flutter.html?gh_owner=40823103&gh_repo=cp2019&gh_path=downloads/dart-ex/" + dirname + "&theme=dark";
-document.getElementById("iframe").src = source ;
-}
-
 function largest(){
 document.getElementById("iframe").width = document.body.clientWidth ;
 document.getElementById("iframe").height = document.body.clientWidth*0.5 ;
 }
-
 function original(){
 document.getElementById("iframe").width = 800 ;
 document.getElementById("iframe").height = 600 ;
 }
 </script>
-<!-- 取 Dart 程式的按鈕 --></p>
-<h4>純 Dart 程式</h4>
-<p><button onclick="getDart('hello')">Hello</button> <button onclick="getDart('for')">For Loop</button> <button onclick="getDart('sum')">Sum</button> <button onclick="getDart('runge_kutta')">Runge-Kutta</button> <button onclick="getDart('rk_ex1')">RK ex1</button> <button onclick="getDart('mass_spring_damping')">Mass Spring Damping</button> <button onclick="getDart('cf')">temperature</button> <button onclick="getDart('temp1')">temperature1</button></p>
-<h4>Html 程式</h4>
-<p><button onclick="getHtmlDart('ROC_FLAG1')">ROC Flag</button> <button onclick="getHtmlDart('grid')">Grid</button> <button onclick="getHtmlDart('xyplot')">X-Y Plot</button> <button onclick="getHtmlDart('slithery')">Slithery</button> <button onclick="getHtmlDart('slithery')">Slithery</button> <button onclick="getHtmlDart('temperature-1')">temperature2</button></p>
-<h4>Flutter 程式</h4>
-<p><button onclick="getFlutter('flutter1')">Flutter1</button> <button onclick="getFlutter('flutter2')">Flutter2</button> <button onclick="getFlutter('flutter3')">Flutter3</button></p>
-<p><!-- 內建放入的 Dart 原始碼 --></p>
-<p><button onclick="largest()">放大</button> <button onclick="original()">回復</button></p>
-<p><iframe height="600" id="iframe" src="https://dartpad.dartlang.org/embed-dart.html?gh_owner=40823103&amp;gh_repo=cp2019&amp;gh_path=downloads/dart_ex/mass_spring_damping&amp;theme=dark" width="800"></iframe></p>
+<h4></h4>
+<p><button onclick="getDart('cf')">temperature   </button> <button onclick="getDart('list string')">temperature string  </button></p>
+<p><button onclick="getHtmlDart('USA')">USA Flag</button>   <button onclick="largest()">放大</button> <button onclick="original()">回復</button></p>
+<p><iframe height="600" id="iframe" src="https://dartpad.dartlang.org/embed-dart.html?gh_owner=40823103&amp;gh_repo=cp2019&amp;gh_path=downloads/dart_ex/cf&amp;theme=dark" width="800"></iframe></p>
+<p></p>
+<p><!-- for site wrap --></p>
+<p></p>
+<p><!-- <script src="../cmsimde/static/chimper/js/jquery-3.3.1.min.js"></script> -->
+<script src="/get_page/cmsimde/static/chimper/js/jquery-migrate-3.0.1.min.js"></script>
+<script src="/get_page/cmsimde/static/chimper/js/jquery-ui.js"></script>
+<script src="/get_page/cmsimde/static/chimper/js/popper.min.js"></script>
+<script src="/get_page/cmsimde/static/chimper/js/bootstrap.min.js"></script>
+<script src="/get_page/cmsimde/static/chimper/js/owl.carousel.min.js"></script>
+<script src="/get_page/cmsimde/static/chimper/js/jquery.stellar.min.js"></script>
+<script src="/get_page/cmsimde/static/chimper/js/jquery.countdown.min.js"></script>
+<script src="/get_page/cmsimde/static/chimper/js/jquery.magnific-popup.min.js"></script>
+<script src="/get_page/cmsimde/static/chimper/js/bootstrap-datepicker.min.js"></script>
+<script src="/get_page/cmsimde/static/chimper/js/aos.js"></script>
+</p>
+<p>&lt;!--</p>
+<p>
+<script src="/get_page/cmsimde/static/chimper/js/typed.js"></script>
+<script>
+var typed = new Typed('.typed-words', {
+                    strings: ["Web Apps"," WordPress"," Mobile Apps"],
+                    typeSpeed: 80,
+                    backSpeed: 80,
+                    backDelay: 4000,
+                    startDelay: 1000,
+                    loop: true,
+                    showCursor: true
+                    });
+</script>
+</p>
