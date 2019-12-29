@@ -7,8 +7,8 @@ REM 將此目錄起始為 git 倉儲
 git init
 REM 在此倉儲啟動 sparse checkout 功能
 git config core.sparsecheckout true
-REM 將此倉儲與 mdecourse 帳號下的 cp2019 倉儲對應, 且將倉儲連結命名為 origin
-git remote add -f origin https://github.com/40823113/cp2019.git
+REM 將此倉儲與 40823125 帳號下的 cp2019倉儲對應, 且將倉儲連結命名為 origin
+git remote add -f origin https://github.com/40823125/cp2019.git
 REM 將要取下的倉儲目錄名稱, 存入 sparse-checkout 設定檔案中
 echo downloads/dart_ex >> .git/info/sparse-checkout
 REM 拉下 origin 中的 master 分支, 這時只會取下 dart_ex 目錄中的檔案
