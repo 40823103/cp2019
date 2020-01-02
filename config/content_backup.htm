@@ -187,11 +187,6 @@ document.getElementById("iframe").height = 500 ;
 </p>
 <p>&lt;!--</p>
 <h1>W17 考試</h1>
-<p>請輸入所要轉換的溫度<br/>以數字加上 kg 或 lb:<br/><br/><input id="temp" max="30" min="1" type="text" value="20kg"/> <input id="submit" type="button" value="換算"/><br/> <br/>轉換結果:<br/><br/><label id="output"></label></p>
-<p>
-<script src="/../cp2019/downloads/dart_ex/weight/weight.js"></script>
-</p>
-<p><canvas height="200" id="canvas" width="300"></canvas> <button id="button">Clear Canvas</button> <button id="fr">Draw FR</button> <button id="roc">Draw ROC</button> <button id="jp">Draw JP</button> <button id="ru">Draw RU</button> <button id="ne">Draw NE</button> <button id="ge">Draw GE</button> <button id="uk">Draw UK</button></p>
 <p>
 <script src="/../cp2019/downloads/dart_ex/flag/flag.js"></script>
 <script>
@@ -228,4 +223,11 @@ document.getElementById("iframe").height = 600 ;
 <p><!-- 內建放入的 Dart 原始碼 --></p>
 <p><button onclick="largest()">放大</button> <button onclick="original()">回復</button></p>
 <p><br/><iframe height="600" id="iframe" src="https://dartpad.github.io/embed-dart.html?gh_owner=40823103&amp;gh_repo=cp2019&amp;gh_path=downloads/dart_ex/weight-dart&amp;theme=dark" width="800"></iframe>.</p>
-<p><br/>W16 查驗考試 &lt;&lt; <a href="/get_page/W17%20%E8%80%83%E8%A9%A6/W16 查驗考試.html">Previous</a></p>
+<p><br/><br/></p>
+<h4>Dart 程式</h4>
+<p><button onclick="getDart('kg,ib')">kg ib</button></p>
+<h4>Html 程式</h4>
+<p><button onclick="getHtmlDart('kg.ib')">kg ib</button></p>
+<!-- 內建放入的 Dart 原始碼 -->
+<p>輸入所要轉換的溫度 <input id="F" max="125" min="-40" type="string" value="25kg"/> <input id="submit" type="button" value="轉換"/> 轉換結果: <label id="output"></label></p>
+<script src="/get_page/downloads/dart_ex/kg ib/kg,ib.js"></script>
